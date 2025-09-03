@@ -11,13 +11,16 @@ const app = express()
 // Middlewares
 app.use(express.json())
 app.use(morgan("dev"))
+const origins = process.env.CLIENT_ORIGINS.split(",");
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
+    origin: origins,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-  }),
-)
+  })
+);
+
 
 // Routes
 const authRoutes = require("./routes/auth")
