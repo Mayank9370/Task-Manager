@@ -1,6 +1,10 @@
 # Task Manager App
 - A full-stack Task Manager application built with React, Express, and MongoDB. Users can sign up, log in, and manage tasks with CRUD functionality and status tracking.
 
+# deployed link
+- frontend : https://task-manager-frontend-vp7q.onrender.com/login
+- backend : https://task-manager-backend-o64r.onrender.com
+
 # Screenshot 
 <img width="1150" height="885" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/097c89d2-9a00-4f9e-bd00-89d0487e2277" />
 
